@@ -1,0 +1,48 @@
+{
+    "tipo-de-documento":[
+        {
+            "id": "C.C",
+            "value": "Cedula de ciudadania"
+        },
+        {
+            "id": "T.I",
+            "value": "Tarjeta de identidad"
+        },
+        {
+            "id": "P.S",
+            "value": "Pasaporte"
+        }
+    ],
+    "genero":[
+        {
+            "id": "M",
+            "value": "Masculino"
+        },
+        {
+            "id": "F",
+            "value": "Femenino"
+        }
+    ],
+    "estado-civil":[
+        {
+            "id": "Solter@",
+            "value": "Solter@"
+        },
+        {
+            "id": "Separad@",
+            "value": "Separad@"
+        },
+        {
+            "id": "Viud@",
+            "value": "Viud@"
+        },
+        {
+            "id": "Casad@",
+            "value": "Casad@"
+        },
+        {
+            "id": "Divorsiad@",
+            "value": "Divorsiad@"
+        }
+    ]
+}
