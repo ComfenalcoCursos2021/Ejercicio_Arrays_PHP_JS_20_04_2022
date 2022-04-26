@@ -45,4 +45,25 @@ addEventListener("DOMContentLoaded", async(e)=>{
         enviar(input);
         e.preventDefault();
     })
+
+
+    document.querySelector(".botonF1").addEventListener("mouseover", (e)=>{
+        let btn = document.querySelectorAll(".btn");
+        for (let boton of Object.values(btn)) {
+            boton.classList.add("animacionVer");
+        }
+    })
+    document.querySelector(".contenedor").addEventListener("mouseleave", (e)=>{
+        let btn = document.querySelectorAll(".btn");
+        for (let boton of Object.values(btn)) {
+            boton.classList.remove('animacionVer');
+        }
+    })
+    let modal = document.getElementById("myModal");
+    document.querySelector("#myBtn").addEventListener("click", (e)=>{
+        modal.style.display = "block";
+    })
+    document.querySelector(".close").addEventListener("click", (e)=>{
+        modal.style.display = "none";
+    })
 })

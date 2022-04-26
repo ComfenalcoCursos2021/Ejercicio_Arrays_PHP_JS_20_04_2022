@@ -7,11 +7,13 @@
     <title>Formulario para captar informacion</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <!-- multistep form -->
     <!-- https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Arrays_PHP_JS_20_04_2022/backend/php/api.php -->
-<form id="msform" method="POST" action="https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Arrays_PHP_JS_20_04_2022/backend/php/api.php" >
+<form id="msform" method="POST" action="backend/php/api.php" >
     <!-- progressbar -->
     <ul id="progressbar">
       <li class="active">Informacion Personal</li>
@@ -62,5 +64,82 @@
       <input type="submit" name="submit" class="submit action-button" value="Submit" />
     </fieldset>
   </form>
+  <div class="contenedor">
+    <button class="botonF1">
+      <span>+</span>
+    </button>
+    <button id="myBtn" class="btn botonF2">
+      <span><ion-icon name="analytics-outline"></ion-icon></span>
+    </button>
+    <!-- <button class="btn botonF3">
+      <span>+</span>
+    </button>
+    <button class="btn botonF4">
+      <span>+</span>
+    </button>
+    <button class="btn botonF5">
+      <span>+</span>
+    </button> -->
+     </div>
+
+    <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"><ion-icon name="close"></ion-icon></span>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+          </tr>
+          <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+          </tr>
+          <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+          </tr>
+          <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+          </tr>
+          <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
 </body>
 </html>
