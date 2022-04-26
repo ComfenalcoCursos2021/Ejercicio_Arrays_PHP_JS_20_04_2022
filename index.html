@@ -10,6 +10,7 @@
 </head>
 <body>
     <!-- multistep form -->
+    <!-- https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Arrays_PHP_JS_20_04_2022/backend/php/api.php -->
 <form id="msform" method="POST" action="https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Arrays_PHP_JS_20_04_2022/backend/php/api.php" >
     <!-- progressbar -->
     <ul id="progressbar">
@@ -25,12 +26,12 @@
           <option value="">Selecione el tipo de documento</option>
 
         </select>
-      <input id="Ndocumento" type="number"  placeholder="N° Documento" required/>
-      <input id="fechaExpedicion" type="text" placeholder="Fecha de expedicion del documento" onfocus="(this.type='date')" onblur="(this.type='text')" required/>
-      <input id="primerNombre" type="text" placeholder="Primer nombre" required/>
-      <input id="segundoNombre" type="text"  placeholder="Segundo nombre" />
-      <input id="primerApellido" type="text"  placeholder="Primer Apellido" required/>
-      <input id="segundoApellido" type="text" placeholder="Segundo Apellido" />
+      <input id="Ndocumento" type="number"  placeholder="N° Documento" required value="123456789"/>
+      <input id="fechaExpedicion" type="text" placeholder="Fecha de expedicion del documento" onfocus="(this.type='date')" onblur="(this.type='text')" required value="20/04/2020"/>
+      <input id="primerNombre" type="text" placeholder="Primer nombre" required value="Perez"/>
+      <input id="segundoNombre" type="text"  placeholder="Segundo nombre" value="Jose"/>
+      <input id="primerApellido" type="text"  placeholder="Primer Apellido" required value="Pepito"/>
+      <input id="segundoApellido" type="text" placeholder="Segundo Apellido" value="Martines"/>
       <div>
           <div id="generos" class="cajaRadio">
             
