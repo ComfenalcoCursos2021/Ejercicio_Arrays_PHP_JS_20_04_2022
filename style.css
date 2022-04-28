@@ -269,7 +269,7 @@ option:hover:before {
   .modal-content {
 	margin: auto;
 	padding: 20px;
-	width: 82%;
+	width: 90%;
   }
   
   /* The Close Button */
@@ -291,7 +291,7 @@ option:hover:before {
   table {
 	position: absolute;
 	top: 145px;
-	width: 80%;
+	width: 90%;
 	border-collapse: collapse;
 	overflow: hidden;
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -300,7 +300,7 @@ option:hover:before {
   th,
   td {
 	padding: 15px;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.276);
 	color: #fff;
   }
   th {
@@ -322,7 +322,7 @@ option:hover:before {
 	right: 0;
 	top: -9999px;
 	bottom: -9999px;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.276);
 	z-index: -1;
   }
   

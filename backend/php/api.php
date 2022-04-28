@@ -16,7 +16,11 @@
         echo json_encode($obj, JSON_PRETTY_PRINT);
 
     }else if($_SERVER['REQUEST_METHOD'] == "POST"){
-        require "GuardarDatosInformacionPersonal.php";
+        if(isset($_SERVER['HTTP_FILE'])){
+            require "BuscarDatos.php";
+        }else{
+            require "GuardarDatosInformacionPersonal.php";
+        }
     }
    
 

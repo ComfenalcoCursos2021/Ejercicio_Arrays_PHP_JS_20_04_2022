@@ -5,7 +5,7 @@
     if(file_exists($nombreFile)){
         $json = json_decode(file_get_contents($nombreFile), true);
         $key = (array) [
-            $_DATA["Ndocumento"] => $_DATA
+            $_DATA["n-documento"] => $_DATA
         ];
         array_unshift($json, $key);
         $f = fopen($nombreFile, "w+");

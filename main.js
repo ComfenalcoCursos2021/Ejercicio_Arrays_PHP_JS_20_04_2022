@@ -4,7 +4,7 @@ addEventListener("DOMContentLoaded", async(e)=>{
     let form = document.querySelector("#msform");    
     let peticion = await fetch(form.action);
     let json = await peticion.json();
-    document.querySelector("#tipoDocumento").insertAdjacentHTML("beforeend", json.InformacionPersonal.select);
+    document.querySelector("#tipo-documento").insertAdjacentHTML("beforeend", json.InformacionPersonal.select);
     document.querySelector("#generos").insertAdjacentHTML("beforeend", json.InformacionPersonal.genero);
     document.querySelector("#estados").insertAdjacentHTML("beforeend", json.InformacionPersonal.estadoCivil);
     /**************************************************/
@@ -59,11 +59,30 @@ addEventListener("DOMContentLoaded", async(e)=>{
             boton.classList.remove('animacionVer');
         }
     })
+    let cargarDatos = async(data)=>{ 
+        let config = {
+            method:"POST",
+            headers: {
+                'file': data
+            }
+        };
+        let peticion = await fetch(form.action, config);
+        let json = await peticion.json();
+        document.querySelector("thead").innerHTML = json.head;
+        document.querySelector("tbody").innerHTML = json.body;
+    }
     let modal = document.getElementById("myModal");
     document.querySelector("#myBtn").addEventListener("click", (e)=>{
         modal.style.display = "block";
+        cargarDatos(e.target.offsetParent.dataset.json);
     })
     document.querySelector(".close").addEventListener("click", (e)=>{
         modal.style.display = "none";
     })
+    
+
+
+
+    
+    
 })

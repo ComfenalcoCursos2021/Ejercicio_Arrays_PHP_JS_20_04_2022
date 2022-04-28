@@ -13,7 +13,7 @@
 <body>
     <!-- multistep form -->
     <!-- https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Arrays_PHP_JS_20_04_2022/backend/php/api.php -->
-<form id="msform" method="POST" action="backend/php/api.php" >
+<form id="msform" method="POST" action="https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Arrays_PHP_JS_20_04_2022/backend/php/api.php" >
     <!-- progressbar -->
     <ul id="progressbar">
       <li class="active">Informacion Personal</li>
@@ -24,16 +24,16 @@
     <fieldset>
       <h2 class="fs-title">Informacion Personal</h2>
       <h3 class="fs-subtitle">Formulario 1</h3>
-        <select id="tipoDocumento" required>
+        <select id="tipo-documento" required>
           <option value="">Selecione el tipo de documento</option>
 
         </select>
-      <input id="Ndocumento" type="number"  placeholder="N° Documento" required value="123456789"/>
-      <input id="fechaExpedicion" type="text" placeholder="Fecha de expedicion del documento" onfocus="(this.type='date')" onblur="(this.type='text')" required value="20/04/2020"/>
-      <input id="primerNombre" type="text" placeholder="Primer nombre" required value="Perez"/>
-      <input id="segundoNombre" type="text"  placeholder="Segundo nombre" value="Jose"/>
-      <input id="primerApellido" type="text"  placeholder="Primer Apellido" required value="Pepito"/>
-      <input id="segundoApellido" type="text" placeholder="Segundo Apellido" value="Martines"/>
+      <input id="n-documento" type="number"  placeholder="N° Documento" required/>
+      <input id="fecha-expedicion" type="text" placeholder="Fecha de expedicion del documento" onfocus="(this.type='date')" onblur="(this.type='text')" required />
+      <input id="primer-nombre" type="text" placeholder="Primer nombre" required />
+      <input id="segundo-nombre" type="text"  placeholder="Segundo nombre" />
+      <input id="primer-apellido" type="text"  placeholder="Primer Apellido" required />
+      <input id="segundo-apellido" type="text" placeholder="Segundo Apellido" />
       <div>
           <div id="generos" class="cajaRadio">
             
@@ -68,7 +68,7 @@
     <button class="botonF1">
       <span>+</span>
     </button>
-    <button id="myBtn" class="btn botonF2">
+    <button id="myBtn" class="btn botonF2" data-json="informacionPersonal.json">
       <span><ion-icon name="analytics-outline"></ion-icon></span>
     </button>
     <!-- <button class="btn botonF3">
@@ -91,50 +91,10 @@
     <div class="container">
       <table>
         <thead>
-          <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-            <th>Column 4</th>
-            <th>Column 5</th>
-          </tr>
+         
         </thead>
         <tbody>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
+         
         </tbody>
       </table>
     </div>
